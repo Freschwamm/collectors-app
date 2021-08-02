@@ -1,6 +1,18 @@
+<?php
+
+
+$db = new PDO('mysql:host=db; dbname=pokemon-cards', 'username', 'password');
+
+$db->setAttirbute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 
 
+$query = $db->prepare('SELECT * FROM `pokemon-card`;');
+
+
+$query->execute();
+
+?>
 
 <html>
 
