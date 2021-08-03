@@ -8,8 +8,8 @@ function pokemonCardContainer($allPokemon) {
             '<div class="card-stats">' .
             "<p> Name: " . $pokemon['name'] . "</p>".
             '<img src="' . $pokemon['image'] . '" alt="">' .
-            "<p> Cost: " .$pokemon['cost'] .
-            "</p> Rarity: ". $pokemon['rarity'] . "</div>";
+            "<p> Cost: " .$pokemon['cost'] . "</p>" .
+            "<p> Rarity: ". $pokemon['rarity'] . "<p/>" . "</div>";
     }
     return $pokemonNames ;
 }
