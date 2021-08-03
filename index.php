@@ -1,6 +1,5 @@
 <?php
 
-
 $db = new PDO('mysql:host=db; dbname=pokemon-cards', 'root', 'password');
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -11,27 +10,19 @@ $query->execute();
 
 $allPokemon = $query->fetchAll();
 
-
-
-foreach($allPokemon as $pokemon) {
-    echo "<p>" . $pokemon['name'] . "</p>";
-    echo '<img src="' . $pokemon['image'] . '" alt="">';
-    echo "<p>" . $pokemon['cost'] . "</p>";
-    echo "<p>" . $pokemon['rarity'] . "</p>";
-}
-
-
-
+require_once 'functions.php';
 
 ?>
 
-<html>
-<head>
 
+<head>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <div >
-
+ <h1>Pokemon Cards</h1>
+ <div>
+ <?php echo pokemonCardContainer($allPokemon) ?>
  </div>
+
+
 </body>
-</html>
