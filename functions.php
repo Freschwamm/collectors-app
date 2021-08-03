@@ -4,11 +4,12 @@
 function pokemonCardContainer($allPokemon) {
     $pokemonNames = "";
     foreach ($allPokemon as $pokemon) {
-        $pokemonNames .= '<div class="card-stats">'
-            . "<p>" . $pokemon['name'] . "</p>".
+        $pokemonNames .=
+            '<div class="card-stats">' .
+            "<p> Name: " . $pokemon['name'] . "</p>".
             '<img src="' . $pokemon['image'] . '" alt="">' .
-            "<p>" .$pokemon['cost'] . "</p>".
-             $pokemon['rarity'] . "</div>";
+            "<p> Cost: " .$pokemon['cost'] .
+            "</p> Rarity: ". $pokemon['rarity'] . "</div>";
     }
     return $pokemonNames ;
 }
