@@ -17,7 +17,25 @@ class Functions extends TestCase
         $input = [['name' => 'Charizard', 'image' => "https://product-images.tcgplayer.com/fit-in/400x558/42382.jpg",
             'cost' => '$300', 'rarity'=> 'Holo Rare']];
         $actualOutput = pokemonCardContainer($input);
-        //what makes the test flag up as passed or failed
+
         $this->assertEquals($expectedOutput, $actualOutput);
     }
+
+
+    public function testFailurePokemonCardContainer()
+    {
+        $expectedOutput = "That's not a pokemon, it's a lizard";
+        $input = [['name' => 'lizard', 'image' => "lizard",
+            'cost' => 'lizard', 'rarity'=> 'lizard']];
+        $actualOutput = pokemonCardContainer($input);
+
+        $this->assertEquals($expectedOutput, $actualOutput);
+    }
+    public function testMalformedPokemonCardContainer()
+    {
+        $input = ['lizard'];
+        $this->expectException(TypeError::class);
+        $output = pokemonCardContainer($input);
+    }
 }
+
