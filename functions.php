@@ -1,7 +1,7 @@
 <?php
 
 
-function pokemonCardContainer($allPokemon) {
+function pokemonCardContainer(array $allPokemon): string {
     $pokemonNames = "";
     foreach ($allPokemon as $pokemon) {
         $pokemonNames .=

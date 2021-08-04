@@ -33,7 +33,7 @@ class Functions extends TestCase
     }
     public function testMalformedPokemonCardContainer()
     {
-        $input = ['lizard'];
+        $input = 3;
         $this->expectException(TypeError::class);
         $output = pokemonCardContainer($input);
     }
