@@ -8,7 +8,7 @@ function pokemonCardContainer(array $allPokemon): string { $pokemonNames = "";
                 array_key_exists('image', $pokemon) &&
                 array_key_exists('cost', $pokemon) &&
                 array_key_exists('rarity', $pokemon))) {
-                return "PLease enter correct information";
+                return "Please enter correct information";
             }
             $pokemonNames .=
                 '<div class="card-stats">' .

@@ -24,7 +24,7 @@ class Functions extends TestCase
 
     public function testFailurePokemonCardContainer()
     {
-        $expectedOutput = "PLease enter correct information";
+        $expectedOutput = "Please enter correct information";
         $input = [['name' => 'lizard', 'image' => "lizard",
             'cost' => 'lizard']];
         $actualOutput = pokemonCardContainer($input);
