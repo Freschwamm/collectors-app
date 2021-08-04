@@ -10,8 +10,8 @@ class Functions extends TestCase
     {
         $expectedOutput =
             '<div class="card-stats">' .
-            '<p> Name: Charizard</p>' .
-            '<img src="https://product-images.tcgplayer.com/fit-in/400x558/42382.jpg" alt="">' .
+            '<h2> Name: Charizard</h2>' .
+            '<img src="https://product-images.tcgplayer.com/fit-in/400x558/42382.jpg" alt="Charizard">' .
             '<p> Cost: $300</p>' .
             '<p> Rarity: Holo Rare<p/>' . '</div>';
         $input = [['name' => 'Charizard', 'image' => "https://product-images.tcgplayer.com/fit-in/400x558/42382.jpg",
@@ -24,9 +24,9 @@ class Functions extends TestCase
 
     public function testFailurePokemonCardContainer()
     {
-        $expectedOutput = "That's not a pokemon, it's a lizard";
+        $expectedOutput = "PLease enter correct information";
         $input = [['name' => 'lizard', 'image' => "lizard",
-            'cost' => 'lizard', 'rarity'=> 'lizard']];
+            'cost' => 'lizard']];
         $actualOutput = pokemonCardContainer($input);
 
         $this->assertEquals($expectedOutput, $actualOutput);

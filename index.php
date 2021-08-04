@@ -1,5 +1,7 @@
 <?php
 
+require_once 'functions.php';
+
 $db = new PDO('mysql:host=db; dbname=pokemon-cards', 'root', 'password');
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -10,7 +12,7 @@ $query->execute();
 
 $allPokemon = $query->fetchAll();
 
-require_once 'functions.php';
+
 
 
 
