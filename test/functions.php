@@ -38,4 +38,3 @@ class Functions extends TestCase
         $output = pokemonCardContainer($input);
     }
 }
-
