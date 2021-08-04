@@ -12,11 +12,15 @@ $allPokemon = $query->fetchAll();
 
 require_once 'functions.php';
 
+
+
 ?>
 
-
+<html lang="en">
 <head>
+    <title>Pokemon Card Collection</title>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
 </head>
 <body>
  <h1>Pokemon Cards</h1>
@@ -26,3 +30,5 @@ require_once 'functions.php';
 
 
 </body>
+</html>
+

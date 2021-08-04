@@ -1,15 +1,16 @@
 <?php
 
 
+
 function pokemonCardContainer(array $allPokemon): string {
     $pokemonNames = "";
     foreach ($allPokemon as $pokemon) {
         $pokemonNames .=
-            '<div class="card-stats">' .
-            "<p> Name: " . $pokemon['name'] . "</p>".
-            '<img src="' . $pokemon['image'] . '" alt="">' .
+            '<section class="card-stats">' .
+            "<h2> Name: " . $pokemon['name'] . "</h2>".
+            '<img src="' . $pokemon['image'] . '" alt="' . $pokemon['name'] . '">' .
             "<p> Cost: " .$pokemon['cost'] . "</p>" .
-            "<p> Rarity: ". $pokemon['rarity'] . "<p/>" . "</div>";
+            "<p> Rarity: ". $pokemon['rarity'] . "<p/>" . "</section>";
     }
     {
         if ($allPokemon === [['name' => 'lizard', 'image' => "lizard",
