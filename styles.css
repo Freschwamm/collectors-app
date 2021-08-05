@@ -1,7 +1,38 @@
+body {
+    padding: 1px;
+    background-image: linear-gradient(to bottom,#000000, #FFFFFF)
+}
+
 h1, div {
     text-align: center;
+    padding: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    color: white;
 }
 
 .card-stats {
-    border: 1px solid black;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgb(238,21,21);
+    background: linear-gradient(180deg, rgba(238,21,21,1) 45%, rgba(0,0,0,1) 50%, rgba(240,240,240,1) 54%);
+    border: 2px solid black;
+    margin: auto;
+    font-size: 80%;
+    color: #000000;
 }
+
+.cardPic {
+    max-width: 50%;
+    max-height: 50%;
+    text-align: center;
+}
+
+.tagline {
+  font-size: 200%;
+}
+

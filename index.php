@@ -20,6 +20,9 @@ $allPokemon = $query->fetchAll();
 <head>
     <title>Pokemon Card Collection</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
 </head>
 <body>
@@ -39,6 +42,9 @@ $allPokemon = $query->fetchAll();
          <label for="rarityOfCard">Rarity</label>
          <input type="submit" name="submit" value="submit">
      </form>
+ </div>
+ <div>
+     <p class="tagline">Gotta Catch 'Em All</p>
  </div>
 
 </body>
