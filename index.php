@@ -29,13 +29,13 @@ $allPokemon = $query->fetchAll();
  </div>
  <div>
      <form action="validation.php" method="post">
-         <input type="text" placeholder="Input pokemon name" name="pokemonName" id="nameOfPokemon" required>
+         <input type="text" placeholder="Input pokemon name" name="pokemonName" id="nameOfPokemon" >
          <label for="nameOfPokemon">Name</label>
-         <input type="text" placeholder="Input card cost" name="pokemonCost" id="costOfCard" required>
+         <input type="text" placeholder="Input card cost" name="pokemonCost" id="costOfCard" >
          <label for="costOfCard">Cost</label>
-         <input type="text" placeholder="Input pokemon card image link" name="pokemonImage" id="cardImage" required>
+         <input type="text" placeholder="Input pokemon card image link" name="pokemonImage" id="cardImage" >
          <label for="cardImage">Image</label>
-         <input type="text" placeholder="Input card rarity" name="pokemonRarity" id="rarityOfCard" required>
+         <input type="text" placeholder="Input card rarity" name="pokemonRarity" id="rarityOfCard" >
          <label for="rarityOfCard">Rarity</label>
          <input type="submit" name="submit" value="submit">
      </form>
