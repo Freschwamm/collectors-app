@@ -14,8 +14,6 @@ $allPokemon = $query->fetchAll();
 
 
 
-
-
 ?>
 
 <html lang="en">
@@ -27,9 +25,21 @@ $allPokemon = $query->fetchAll();
 <body>
  <h1>Pokemon Cards</h1>
  <div>
- <?php echo pokemonCardContainer($allPokemon) ?>
+     <?php echo pokemonCardContainer($allPokemon) ?>
  </div>
-
+ <div>
+     <form action="validation.php" method="post">
+         <input type="text" placeholder="Input pokemon name" name="pokemonName" id="nameOfPokemon" >
+         <label for="nameOfPokemon">Name</label>
+         <input type="text" placeholder="Input card cost" name="pokemonCost" id="costOfCard" >
+         <label for="costOfCard">Cost</label>
+         <input type="text" placeholder="Input pokemon card image link" name="pokemonImage" id="cardImage" >
+         <label for="cardImage">Image</label>
+         <input type="text" placeholder="Input card rarity" name="pokemonRarity" id="rarityOfCard" >
+         <label for="rarityOfCard">Rarity</label>
+         <input type="submit" name="submit" value="submit">
+     </form>
+ </div>
 
 </body>
 </html>
