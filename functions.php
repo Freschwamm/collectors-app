@@ -13,7 +13,7 @@ function pokemonCardContainer(array $allPokemon): string { $pokemonNames = "";
             $pokemonNames .=
                 '<div class="card-stats">' .
                 "<h2> Name: " . $pokemon['name'] . "</h2>" .
-                '<img src="' . $pokemon['image'] . '" alt="' . $pokemon['name'] . '">' .
+                '<img src="' . $pokemon['image'] . '" alt="' . $pokemon['name'] . '" class="cardPic">' .
                 "<p> Cost: " . $pokemon['cost'] . "</p>" .
                 "<p> Rarity: " . $pokemon['rarity'] . "<p/>" . "</div>";
         }
